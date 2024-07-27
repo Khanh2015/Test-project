@@ -1,17 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ListProduct from "./pages/ListProduct";
-import ProductForm from "./pages/ProductForm";
+import PaymentForm from "./pages/PaymentForm";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<ListProduct />} />
-        <Route path="/add-product" element={<ProductForm />} />
-        <Route path="/edit-product/:id" element={<ProductForm />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <PaymentForm />;
 }
 
 export default App;
